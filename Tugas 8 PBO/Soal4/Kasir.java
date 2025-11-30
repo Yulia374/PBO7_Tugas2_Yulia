@@ -5,21 +5,18 @@ public class Kasir {
     int jumlah;
     double diskon;
 
-    // 1. hanya harga
     public Kasir(double harga) {
         this.harga = harga;
         this.jumlah = 1;
         this.diskon = 0;
     }
 
-    // 2. harga + jumlah
     public Kasir(double harga, int jumlah) {
         this.harga = harga;
         this.jumlah = jumlah;
         this.diskon = 0;
     }
 
-    // 3. lengkap
     public Kasir(double harga, int jumlah, double diskon) {
         this.harga = harga;
         this.jumlah = jumlah;
@@ -31,4 +28,5 @@ public class Kasir {
         total -= total * (diskon / 100);
         return total;
     }
+
 }
